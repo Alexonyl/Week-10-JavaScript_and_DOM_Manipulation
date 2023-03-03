@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container" >
+    <!--Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+    •	A Bootstrap styled table representing your choice of data.
+    •	A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.-->
+
+    <h1 class="text-success">Grocery List</h1>
+
+    <img class="rounded float-right" height="300 px" src="https://dornsife.usc.edu/assets/img/news/story/3047.jpg">
+    <br>
+    <br>
+    <div class="card bg-success bg-gradient">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-quantity" class="text-warning">Quantity</label>
+                        <input type="text" class="form-control" id="new-quantity" placeholder="Quantity">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-item" class="text-warning">New Item</label>
+                        <input type="text" class="form-control" id="new-item" placeholder="Item">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-warning form-control">Create</button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th class="text-success">Quantity</th>
+            <th class="text-success">Item</th>
+            <th class="text-success">Actions</th>
+        </tr>
+    </table>
+
+    <script src="groceryList.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
